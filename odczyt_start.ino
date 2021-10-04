@@ -1,7 +1,12 @@
-\\ A0 - Błękitny, wewnętrzny
-\\ A1 - Zielony, zewnętrzny
-\\ Błękitny do białego drukarki
-\\ Fioletowy do czarnego drukarki
+// A0 - Błękitny, wewnętrzny
+// A1 - Zielony, zewnętrzny
+// Błękitny do białego drukarki
+// Fioletowy do czarnego drukarki
+#include <Arduino.h>
+#include "BasicStepperDriver.h"
+
+#define MOTOR_STEPS 200
+#define RPM 60 // domyślnie 120
 
 int in1 = 0;
 int lastIn = 0;
